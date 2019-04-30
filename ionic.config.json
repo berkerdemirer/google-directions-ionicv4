@@ -1,5 +1,7 @@
 {
   "name": "autlo-task",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

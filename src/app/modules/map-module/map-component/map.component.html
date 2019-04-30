@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Autlo Task
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <app-filter (filteredLoc)="receiveFilteredLocations($event)"></app-filter>
+    <div #map id="map"></div>
+    <ion-card *ngIf="isCalculateButtonActive" class="map-card">
+        <ion-card-content>
+            <ion-button color="medium" expand="block" (click)="calculateDistance()">Calculate Distance</ion-button>
+            <p class="ion-text-center">Distance : {{distanceBetweenTwoPoints}}</p>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>
+
